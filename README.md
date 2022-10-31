@@ -71,3 +71,7 @@ In this example, The highest bidder is `John Smith` and he bids 500, but he will
 - Tie-breaker: Who comes first in alphabetical order.
 - In case of no bids show the message `No Winners`.
 - It may occur that 2 of the winner pays the same amount if more than one user bids the same amount. 
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
