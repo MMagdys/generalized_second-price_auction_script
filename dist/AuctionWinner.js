@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.calculateWinners = void 0;
 const calculateWinners = (items, bids) => {
-    if (bids.length < items) {
+    if (bids.length <= items) {
         return "No Winners";
     }
     const sortedBids = bids.sort(BidAmountNameSorter);

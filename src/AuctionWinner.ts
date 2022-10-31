@@ -6,7 +6,7 @@ export interface Bid{
 
 const calculateWinners = (items: number, bids: Bid[]): string => {
 
-    if(bids.length < items) {
+    if(bids.length <= items) {
         return "No Winners";
     }
 
