@@ -4,10 +4,10 @@ export interface Bid{
 }
 
 
-const calculateWinners = (items: number, bids: Bid[]): string | null => {
+const calculateWinners = (items: number, bids: Bid[]): string => {
 
     if(bids.length < items) {
-        return null;
+        return "No Winners";
     }
 
     const sortedBids = bids.sort( BidAmountNameSorter );
