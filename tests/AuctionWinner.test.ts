@@ -93,14 +93,14 @@ test('Winner calculation: Number of Bids should be greater than the items',async
     ]
 
     let winners = calculateWinners(items, []);
-    expect(winners).toBeNull();
+    expect(winners).toBe("No Winners");
 
     winners = calculateWinners(items, bids.slice(0,1));
-    expect(winners).toBeNull();
+    expect(winners).toBe("No Winners");
 
     winners = calculateWinners(items, bids.slice(0,2));
-    expect(winners).toBeNull();
+    expect(winners).toBe("No Winners");
 
     winners = calculateWinners(items, bids);
-    expect(winners).not.toBeNull();
+    expect(winners).not.toBe("No Winners");
 })
